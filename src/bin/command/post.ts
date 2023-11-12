@@ -83,8 +83,11 @@ async function generatePost (options: Options) {
   if (!postPrompt.topic) {
     throw new Error('The topic is mandatory, use the option -tp or --topic')
   }
+  var finalPrompt = postPrompt
+  finalPrompt.model = 'gpt-4-1106-preview';
+  console.log(`---> Using model: ${finalPrompt.model}`);
 
-  const postGenerator = new OpenAIPostGenerator(postPrompt)
+  const postGenerator = new OpenAIPostGenerator(finalPrompt)
   const post = await postGenerator.generate()
 
   const jsonData = {
