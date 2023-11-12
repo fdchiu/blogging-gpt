@@ -1,3 +1,12 @@
+# Blogging GPT
+This repo is forked from original julius-gpt.
+
+## I updated it to support the latest gpt-4 turbo model as of Nov. 11, 2023
+
+Please send me questions and feature request.
+
+------- The original readme -------------
+
 This Node.js CLI and API gives you the ability to generate content with the OpenAI API (GPT-4 or GPT-3.5-turbo). It can generate text in all languages supported by Open AI.
 
 # How it Works
